@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Un lugar de vida</title>
+    <link rel="icon" type="image/jpg" href="../img-anette/descarga.png">
+    <link rel="stylesheet" href="Diseños del formulario.css">
+</head>
+
+<body>
+    <div class="Encabezado">Inicia sesión o regístrate</div>
+    <div class="form-login" class="form-pag">
+
+        <div class="form-enc">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="login()" class="btn-ini">Iniciar sesión</button>
+                <button type="button" onclick="register()" class="btn-ini">Registrarme</button>
+            </div>
+
+            <!--incio de sesion-->
+            <form action="validar.php" id="ini-sesion" class="iniciodesesion" method="post">
+                <input name="correo" type="text" class="datos" placeholder="Correo electrónico">
+                <input name="contra" type="password" class="datos" placeholder="Contraseña">
+                <input type="checkbox" class="opcion"><span>Recordar mi contraseña</span>
+                <button type="submit" class="cont" value="iniciar-sesion">Iniciar sesión</button>
+            </form>
+            <!--registro de cliente-->
+
+            <form action="registro.php" method="post" id="regist" class="registro">
+                <input name="nombre" type="text" class="datos" placeholder="Nombre/s" required>
+                <input name="apellido" type="text" class="datos" placeholder="Apellidos" required>
+                <input name="numero" type="number" class="datos" placeholder="Número telefónico" required>
+                <input name="email" type="email" class="datos" placeholder="Correo electrónico" required>
+                <input name="contra" type="password" class="datos" placeholder="Crea una contraseña" required>
+                <input type="password" class="datos" placeholder="Repite la contraseña" required>
+                <input name="term-cond-regist" type="checkbox" class="opcion"><span>Estoy de acuerdo con los <a href="Terminos y condiciones.html">términos y conciciones</a></span>
+                <button type="submit" name="register" class="cont" name="registrarme" value="registrarme">Registrarme</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById('ini-sesion');
+        var y = document.getElementById('regist');
+        var z = document.getElementById('btn');
+
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('formulario');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

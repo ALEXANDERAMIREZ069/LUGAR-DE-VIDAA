@@ -1,0 +1,126 @@
+#form-login {
+    display: none;
+}
+
+body {
+    background-color: olivedrab;
+    padding-top: 3%;
+}
+
+.Encabezado {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Candara;
+    text-shadow: 1px 1px 2px black;
+}
+
+.form-enc {
+    width: 380px;
+    height: 530px;
+    position: relative;
+    margin: 2% auto;
+    background: white;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.button-box {
+    width: 287px;
+    margin: 35px auto;
+    position: relative;
+    border-color: #FFC300;
+    border-radius: 30px;
+}
+
+.btn-ini {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #FFFFB310;
+    border: 0;
+    outline: none;
+    position: relative;
+    border-radius: 30px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 165px;
+    height: 100%;
+    background: #FFC300;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.iniciodesesion {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.registro {
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.datos {
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #FAFAFA;
+    outline: none;
+    background: #020F1280;
+    border-radius: 5px;
+}
+
+.cont {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #FFC300;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.opcion {
+    margin: 30px 10px 34px 0;
+}
+
+span {
+    color: white;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#ini-sesion {
+    left: 50px;
+}
+
+#ini-sesion input {
+    color: white;
+    font-size: 15;
+}
+
+#regist {
+    left: 450px;
+}
+
+#regist input {
+    color: white;
+    font-size: 15;
+}

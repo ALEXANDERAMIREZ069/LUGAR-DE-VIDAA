@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* barra de navegacion */
+
+.logo {
+    background: black;
+}
+
+svg {
+    display: block;
+    font: 20vh 'Montserrat';
+    width: 600px;
+    height: 100px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: #A9A8A3;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #78866B;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #31572C;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #4F772D;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #90A955;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #51684C;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.cont-ul li {
+    font-size: 20px;
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+}
+
+.cont-ul li .bar {
+    color: #5B8E7D;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+
+.cont-ul li a:hover {
+    color: white;
+}
+
+.develop {
+    position: relative;
+}
+
+.bar2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*carrucel*/
+
+.contenedor {
+    width: 90%;
+    height: 80%;
+    margin-top: 100px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.contenedor .carrucel {
+    display: flex;
+    animation: carrucel 40s infinite alternate;
+    animation-timing-function: cubic-bezier(1);
+}
+
+.contenedor .cont-carrucel {
+    list-style: none;
+}
+
+.contenedor img {
+    width: 1800px;
+    height: 600px;
+}
+
+@keyframes carrucel {
+    0% {
+        margin-right: 0px;
+    }
+    0% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -1850px;
+    }
+    50% {
+        margin-left: -1850px;
+    }
+    50% {
+        margin-left: -3650px;
+    }
+    75% {
+        margin-left: -3650px;
+    }
+    75% {
+        margin-left: -5550px;
+    }
+    100% {
+        margin-left: -5550px;
+    }
+}
+
+
+/* informacion de la pagina */
+
+.tarjeta {
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.tarjeta .info {
+    display: inline-block;
+    margin: 0px auto;
+    background: #AABACC;
+    height: 600px;
+    width: 400px;
+}
+
+.tarjeta .info img {
+    height: 250px;
+    width: 400px;
+}
+
+.info h3 {
+    font-family: 'Bakbak One', cursive;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.info p {
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*informacion del usuario*/
+
+.overlay2 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: right;
+    display: flex;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+.ventana2 {
+    margin-top: 3%;
+    margin-right: 15px;
+    padding: 15px;
+    text-align: center;
+    float: right;
+    font-size: 15px;
+    background: cadetblue;
+    height: 300px;
+    width: 230px;
+    border-radius: 5%;
+    box-shadow: 0px 10px 10px -6px black;
+}
+
+.icono {
+    font-size: 60px;
+    text-align: center;
+    color: brown;
+}
+
+.cerrar2 {
+    float: right;
+    color: white;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.boton {
+    margin-top: 15px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: blanchedalmond;
+}
+
+.overlay2 .ventana2 p {
+    font-size: 18px;
+    color: whitesmoke;
+}
